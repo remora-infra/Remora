@@ -2,7 +2,7 @@
 
 **Remora** is a high-performance [Model Context Protocol (MCP)](https://modelcontextprotocol.io/) server that acts as a **Shared Subconscious Layer** for your AI ecosystem.
 
-In a traditional AI setup, agents are silos—they exist in a vacuum, perform their task, and vanish. **Remora** changes the narrative. It provides a persistent, semantic memory bridge that allows multiple agents to share context and facts **without ever having to talk to each other directly.**
+In a traditional AI setup, agents are silos-they exist in a vacuum, perform their task, and vanish. **Remora** changes the narrative. It provides a persistent, semantic memory bridge that allows multiple agents to share context and facts **without ever having to talk to each other directly.**
 
 ---
 
@@ -14,7 +14,7 @@ Imagine you have two agents:
 
 The **Clerk** and the **Brain** don't share a chat window. They might not even use the same LLM provider. **Remora is the layer beneath them.** 
 
-When the **Clerk** saves a fact about your project, it is woven into the Remora Layer. When the **Brain** later encounters a problem related to that project, it "recollects" the relevant memory through Remora's semantic search. It creates a world where your agents don't just work—they remember.
+When the **Clerk** saves a fact about your project, it is woven into the Remora Layer. When the **Brain** later encounters a problem related to that project, it "recollects" the relevant memory through Remora's semantic search. It creates a world where your agents don't just work-they remember.
 
 ---
 

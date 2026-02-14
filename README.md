@@ -78,7 +78,7 @@ docker run -d \
   --name remora-memory \
   -e MONGO_URI="your_mongodb_uri" \
   -e DB_NAME="remora" \
-  remora-mcp-server
+  remora-server
 ```
 ### 4. Register in Archestra.ai
 - **Type**: HTTP/SSE.

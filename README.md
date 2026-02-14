@@ -55,3 +55,38 @@ Remora is built with **StreamableHTTP**, specifically optimized for Archestra's 
 - **Action:** Remora performs a semantic similarity search to find the most relevant truths across the history of all connected agents.
 
 ---
+
+## 🐳 Deployment & Quickstart
+
+### 1. Configure Environment
+Create a `.env` file:
+```env
+PORT=8080
+MONGO_URI=your_mongodb_connection_string
+DB_NAME=remora
+```
+
+### 2. Build the Subconscious
+```
+docker build -t remora-mcp-server .
+```
+
+### 3. Launch the Neural Layer
+```
+docker run -d \
+  -p 8080:8080 \
+  --name remora-memory \
+  -e MONGO_URI="your_mongodb_uri" \
+  -e DB_NAME="remora" \
+  remora-mcp-server
+```
+### 4. Register in Archestra.ai
+- **Type**: HTTP/SSE.
+- **URL**: http://host.docker.internal:8080/mcp.
+
+- **Endpoint**: /mcp
+### 🛠 Tech Stack
+- **Framework**: Fastify.
+- **Database**: MongoDB.
+- **Embeddings**: Local Transformers (all-MiniLM-L6-v2).
+- **Protocol**: MCP (StreamableHTTP Transport)
